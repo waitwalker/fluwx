@@ -1,4 +1,4 @@
-# 6.0.0-preview.6
+# 6.0.0-preview.7
 * Android迁移到KTS
 
 # 6.0.0-preview.6
