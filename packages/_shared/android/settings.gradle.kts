@@ -1,3 +1,14 @@
-package packages._shared.android
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
 
-rootProject.name = 'fluwx'
+    plugins {
+        id("com.android.library") version "8.12.1"
+        id("org.jetbrains.kotlin.android") version "2.2.20"
+    }
+}
+
+rootProject.name = "fluwx"
