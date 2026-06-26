@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'fluwx/CocoaPodsSources/fluwx/include/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'WechatOpenSDK-XCFramework','~> 2.0.5'
-  s.platform         = :ios, '13.0'
+  s.platform         = :ios, '15.0'
   s.static_framework = true
   s.resource_bundles = {
     'fluwx_privacy' => ['fluwx/CocoaPodsSources/fluwx/Resources/PrivacyInfo.xcprivacy']
