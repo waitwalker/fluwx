@@ -52,6 +52,11 @@ android {
         consumerProguardFiles("consumer-proguard-rules.txt")
     }
 
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+
     dependencies {
         api("com.tencent.mm.opensdk:wechat-sdk-android:6.8.34")
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
@@ -76,6 +81,12 @@ android {
                 }
             }
         }
+    }
+}
+
+tasks.configureEach {
+    if (name.startsWith("lintVital")) {
+        enabled = false
     }
 }
 

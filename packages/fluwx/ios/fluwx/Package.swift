@@ -11,8 +11,8 @@ let package = Package(
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework"),
         .package(
-            url: "https://github.com/JarvanMo/WechatOpenSDK-SPM", //
-            from: "2.0.5"
+            name: "WechatOpenSDK-SPM",
+            path: "WechatOpenSDK-SPM"
         )
     ],
     targets: [
